@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <h1 class="display-4">{{ pelicula.title}}</h1>
+    <hr>
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img [src]="pelicula.img" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <p class="card-text">{{ pelicula.des }}</p>
+                    <p class="card-text"><small class="text-muted">Dispinbile en todas las salas</small></p>
+                    <app-cinemas></app-cinemas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
