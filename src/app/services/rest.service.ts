@@ -13,6 +13,7 @@ export class RestService {
   constructor(private _http: HttpClient) { }
 
   PostResrva(reserva){
+    console.log(reserva);
     return this._http.post(`${ this.url }/reserva.json`, reserva).pipe(
       map( (resp: any) => {
         reserva.id_reserva = resp.name;
